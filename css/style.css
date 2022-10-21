@@ -25,14 +25,16 @@ body {
 .enlaces {
     background-color: var(--blanco);
     margin-top: auto;
-    padding: 2rem;
+    padding: 1rem;
     font-family: var(--fuentePrimaria);
-    height: 30px;
+    height: 120px;
 }
+
 @media (min-width: 480px) {
     .enlaces {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        height: 30px;
     }
 }
 
@@ -56,22 +58,14 @@ body {
     text-align: left;
     width: 735px;
     height: 50px;
-    display: grid;
 }
 
 @media (min-width: 480px) {
     .enlaces__secundarios {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 1rem;
-    }
-}
-
-@media (min-width: 480px) {
-    .enlaces__secundarios {
-        display: grid;
-        grid-template-rows: repeat(5, 1fr);
-        column-gap: 1rem;
+        flex-direction: column;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 
@@ -92,19 +86,38 @@ body {
 .contenedor1 {
     width: 100%;
     height: 100%;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
+
+@media (min-width:480px) {
+    .contenedor1 {
+        margin-top: 2rem;
+        }
+    }
 
 .portada {
     width: 100%;
     height: 700px;
 }
 
+@media (min-width:480px) {
+.portada {
+    width: 50%;
+    height: 50%;
+    }
+}
+
 .texto1 h1 {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     color: var(--grisOscruo);
     text-align: center;
     text-transform: uppercase;
+}
+
+@media (min-width:480px) {
+    .texto1 h1 {
+        font-size: 2.2rem;
+    }
 }
 
 .texto1 h2 {
@@ -112,18 +125,25 @@ body {
     font-weight: bold;
     text-align: center;
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
+}
+
+@media (min-width:480px) {
+    .texto1 h2 {
+        font-size: 2rem;
+    }
 }
 
 /** Servicios 1 **/
 
 .contenedor2 {
     background-color: var(--grisClaro);
-    width: 1500px;
+    width: 300px;
 }
 
 @media (min-width: 480px) {
 .contenedor2 {
+    width: 1500px;
     display: grid;
     grid-template-columns: 30% 70%;
     }
@@ -144,6 +164,13 @@ body {
 .servicios h1 {
     text-transform: uppercase;
     border-bottom: solid 3px grey; /** Linea larga **/
+    font-size: 1.5rem;
+}
+
+@media (min-width:480px) {
+    .servicios h1 {
+        font-size: 2.2rem;
+    }
 }
 
 .servicios h2 {
@@ -158,18 +185,25 @@ body {
 .servicios p {
     text-align: justify;
     margin-right: 3rem;
+    font-size: 1rem;
+}
+
+@media (min-width:480px) {
+    .servicios p {
+        font-size: 1.7rem;
+    }
 }
 
 /** Servicios 2 **/
 
 .contenedor3 {
     background-color: var(--grisClaro);
-    width: 1500px;
-    height: 430px;
+    width: 300px;
 }
 
 @media (min-width: 480px) {
     .contenedor3 {
+        width: 1500px;
         display: grid;
         grid-template-columns: 30% 70%;
     }
@@ -222,8 +256,16 @@ body {
 
 .portada-arq {
     width: 100%;
-    height: 700px;
+    height: 100%;
+    margin-top: 1rem;
 }
+
+@media (min-width:480px) {
+    .portada-arq {
+        width: 100%;
+        height: 700px;
+        }
+    }
 
 .porfolio h1 {
     font-size: 2rem;
@@ -264,6 +306,37 @@ body {
 .producto1 {
     width: 388px;
     height: 580px;    
+}
+
+.casas {
+    position: relative;
+    overflow: hidden;
+}
+
+.casas-texto {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #EFEDED;
+    margin-bottom: 0rem;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+.casas-texto h1  {
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.casas-texto p {
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.casas:hover .casas-texto {
+    transform: translateY(0%);
 }
 
 /** 3. INTERIORISMO **/
@@ -387,15 +460,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.campo .campo1 input p {
-    background-color: var(--grisClaro);
-    width: 90%;
-    max-width: 90%;
-    margin: auto;
-    padding: 5px 35px;
-    border-radius: 5%;
-}
-
 .boton {
     margin-bottom: 1rem;
     display: grid;
@@ -412,9 +476,10 @@ body {
 }
 
 @media (min-width: 480px) {
-    .contenedor4{
+    .contenedor4 {
         display: grid;
         grid-template-columns:25% 25% 25% 25%;
+        margin-top: 0rem;
     }
 }
 
