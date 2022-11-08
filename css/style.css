@@ -1,15 +1,4 @@
 @charset "UTF-8";
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 16px;
-  font-family: "Josefin", sans-serif;
-  font-family: "Raleway", sans-serif;
-}
-
-/** 1.INDEX **/
 /** Navegación **/
 .enlaces {
   background-color: #fff;
@@ -71,6 +60,17 @@ body {
 }
 
 /** Fin navegación **/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Josefin", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+/** 1.INDEX **/
 /** Imagen Principal **/
 .contenedor1 {
   width: 100%;
@@ -205,6 +205,11 @@ body {
     flex-wrap: wrap;
   }
 }
+@media (max-width: 500px) {
+  .contenedor-celular {
+    width: 60%;
+  }
+}
 .contenedor-celular p {
   text-align: justify;
   margin-right: 5rem;
@@ -215,11 +220,6 @@ body {
   grid-column: 3/4;
 }
 
-@media (max-width: 500px) {
-  .contenedor-celular {
-    width: 60%;
-  }
-}
 /** 2. ARQUITECTURA **/
 /** Enlaces -- Uso el mismo css que arriba **/
 /** Imagen Principal **/
@@ -315,7 +315,6 @@ body {
 
 /** 3. INTERIORISMO **/
 /**Mismas propiedades que en Arq**/
-/** 4. NOSOTROS **/
 /** 4. NOSOTROS **/
 .contenedor-img9 {
   width: 100%;
