@@ -6,13 +6,6 @@
     padding: 1rem;
     font-family: $fuentePrimaria;
     height: 120px;
-
-    @media (min-width: 768px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        height: 130px;
-    }
-
     @media (min-width: 768px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
