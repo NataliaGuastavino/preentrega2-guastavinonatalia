@@ -6,7 +6,7 @@
     font-family: $fuentePrimaria;
     margin-top: 0rem;
     text-align: center;
-    @media (min-width: 500px) {
+    @media (min-width: 1024px) {
         display: grid;
         grid-template-columns:25% 25% 25% 25%;
         margin-top: auto;
