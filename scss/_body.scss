@@ -566,9 +566,10 @@ body {
         text-transform: uppercase;
         font-size: 13px;
         font-family: $fuenteSecundaria;
-        color: $amarillo;
         font-weight: bold;
-        width: 30%;
+        width: 20%;
         height: 30px;
+        background-color: $amarillo;
+        color: $grisOscruo;
     }
 }
