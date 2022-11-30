@@ -411,6 +411,7 @@ body {
   margin-top: 1rem;
   font-size: 1.5rem;
   text-align: center;
+  background: linear-gradient(transparent 40%, #ffc107 60%) no-repeat;
 }
 @media (min-width: 768px) {
   .texto1 h2 {
@@ -433,7 +434,7 @@ body {
   width: 90%;
   margin-left: 2rem;
   border-radius: 10%;
-  margin-top: 3rem;
+  margin-top: 9rem;
 }
 @media (max-width: 768px) {
   .servicios__img {
@@ -450,8 +451,7 @@ body {
 }
 .servicios h2 {
   text-transform: uppercase;
-  border-bottom: solid 3px grey;
-  /** Linea larga **/
+  border-bottom: solid 3px grey; /** Linea larga **/
   font-size: 1.5rem;
   text-align: center;
 }
@@ -462,7 +462,12 @@ body {
 }
 .servicios h3 {
   text-transform: uppercase;
-  margin-left: 0.2rem;
+  margin-right: 0rem;
+}
+.servicios h4 {
+  text-decoration-color: #ffc107;
+  text-decoration-line: underline;
+  font-size: 1.7rem;
 }
 .servicios p {
   text-align: justify;
@@ -540,6 +545,7 @@ body {
   margin-left: 5rem;
   text-transform: uppercase;
   border-bottom: solid 3px grey;
+  background: linear-gradient(transparent 40%, #ffc107 60%) no-repeat;
 }
 
 /** Galería de fotos **/
@@ -674,7 +680,7 @@ body {
     width: 100%;
     height: 70%;
     margin-left: 1rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
     margin-bottom: auto;
   }
 }
@@ -709,6 +715,10 @@ body {
     padding-top: 2rem;
     margin-top: 0rem;
   }
+}
+.contenedor__alto u {
+  text-decoration-color: #ffc107;
+  text-decoration-line: underline;
 }
 .contenedor__alto p {
   text-align: justify;
@@ -812,8 +822,7 @@ body {
   color: #242121;
   text-align: center;
   margin-top: 5rem;
-  border-bottom: solid 3px #EFEDED;
-  /** Linea larga **/
+  border-bottom: solid 3px #EFEDED; /** Linea larga **/
 }
 .formulario__form fieldset {
   border: none;
@@ -912,6 +921,7 @@ body {
   text-transform: uppercase;
   font-size: 13px;
   font-family: "Josefin", sans-serif;
+  color: #ffc107;
   font-weight: bold;
   width: 30%;
   height: 30px;
